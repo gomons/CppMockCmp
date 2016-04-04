@@ -1,0 +1,7 @@
+BUILD/
+Debug/
+Release/
+.vs/
+*.opendb
+*.sdf
+*.user
