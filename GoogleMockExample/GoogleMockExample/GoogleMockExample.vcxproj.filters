@@ -5,10 +5,33 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx;h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
+    <Filter Include="src\tests">
+      <UniqueIdentifier>{c88a84bd-edaa-40fa-b170-e89494a57b53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src">
+      <UniqueIdentifier>{f72b8544-bc3a-4ac8-a5f6-d255dc5d026d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mock">
+      <UniqueIdentifier>{4bc82ea7-8a31-4050-9931-7d025b2189a3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="test_Painter.cpp">
+      <Filter>src\tests</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Turtle.h">
+      <Filter>src\src</Filter>
+    </ClInclude>
+    <ClInclude Include="mock_Turtle.h">
+      <Filter>src\mock</Filter>
+    </ClInclude>
+    <ClInclude Include="Painter.h">
+      <Filter>src\src</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
