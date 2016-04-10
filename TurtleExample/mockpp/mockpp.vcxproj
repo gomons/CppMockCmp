@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{72976CE2-4015-4BFE-868F-456719BE7E91}</ProjectGuid>
+    <RootNamespace>mockpp</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)BUILD\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)BUILD\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)BUILD\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)BUILD\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)BUILD\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)BUILD\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)BUILD\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)BUILD\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AbstractExpectation.h" />
+    <ClInclude Include="AbstractExpectationCollection.h" />
+    <ClInclude Include="builder\ArgumentsMatchBuilder.h" />
+    <ClInclude Include="builder\ArgumentsMatchBuilderN.h" />
+    <ClInclude Include="builder\BuilderNamespace.h" />
+    <ClInclude Include="builder\IdentityBuilder.h" />
+    <ClInclude Include="builder\InvocationMockerBuilder.h" />
+    <ClInclude Include="builder\MatchBuilder.h" />
+    <ClInclude Include="builder\StubBuilder.h" />
+    <ClInclude Include="chaining\AbstractDynamicChainingMock.h" />
+    <ClInclude Include="chaining\AbstractInvocationDispatcher.h" />
+    <ClInclude Include="chaining\ChainableMockMethod.h" />
+    <ClInclude Include="chaining\ChainableMockMethod0.h" />
+    <ClInclude Include="chaining\ChainableMockMethod1.h" />
+    <ClInclude Include="chaining\ChainableMockMethod2.h" />
+    <ClInclude Include="chaining\ChainableMockMethod3.h" />
+    <ClInclude Include="chaining\ChainableMockMethod4.h" />
+    <ClInclude Include="chaining\ChainableMockMethod5.h" />
+    <ClInclude Include="chaining\ChainableMockMethod6.h" />
+    <ClInclude Include="chaining\ChainableMockObject.h" />
+    <ClInclude Include="chaining\ChainableMockObject_macro.h" />
+    <ClInclude Include="chaining\ChainingMockBuilder.h" />
+    <ClInclude Include="chaining\ChainingMockObjectSupport.h" />
+    <ClInclude Include="chaining\CoreMock.h" />
+    <ClInclude Include="chaining\CountedChainableMethod.h" />
+    <ClInclude Include="chaining\DynamicChainingMock.h" />
+    <ClInclude Include="chaining\DynamicChainingMockError.h" />
+    <ClInclude Include="chaining\FIFOInvocationDispatcher.h" />
+    <ClInclude Include="chaining\Invocation.h" />
+    <ClInclude Include="chaining\InvocationDispatcher.h" />
+    <ClInclude Include="chaining\InvocationMocker.h" />
+    <ClInclude Include="chaining\InvocationN.h" />
+    <ClInclude Include="chaining\Invokable.h" />
+    <ClInclude Include="chaining\LIFOInvocationDispatcher.h" />
+    <ClInclude Include="chaining\mockpp_pti.h" />
+    <ClInclude Include="chaining\OnConsecutiveCalls.h" />
+    <ClInclude Include="chaining\ReturnValueAndCall.h" />
+    <ClInclude Include="chaining\ReturnValueAndTrigger.h" />
+    <ClInclude Include="chaining\StubMatchersCollection.h" />
+    <ClInclude Include="compat\Asserter.h" />
+    <ClInclude Include="compat\AssertionFailedError.h" />
+    <ClInclude Include="compat\Exception.h" />
+    <ClInclude Include="compat\Formatter.h" />
+    <ClInclude Include="constraint\And.h" />
+    <ClInclude Include="constraint\Constraint.h" />
+    <ClInclude Include="constraint\ConstraintHolder.h" />
+    <ClInclude Include="constraint\ConstraintList.h" />
+    <ClInclude Include="constraint\ConstraintSet.h" />
+    <ClInclude Include="constraint\ConstraintSetN.h" />
+    <ClInclude Include="constraint\IsAnything.h" />
+    <ClInclude Include="constraint\IsCloseTo.h" />
+    <ClInclude Include="constraint\IsEqual.h" />
+    <ClInclude Include="constraint\IsGreaterOrEqual.h" />
+    <ClInclude Include="constraint\IsGreaterThan.h" />
+    <ClInclude Include="constraint\IsInstanceOf.h" />
+    <ClInclude Include="constraint\IsLessOrEqual.h" />
+    <ClInclude Include="constraint\IsLessThan.h" />
+    <ClInclude Include="constraint\IsNot.h" />
+    <ClInclude Include="constraint\IsNothing.h" />
+    <ClInclude Include="constraint\IsSame.h" />
+    <ClInclude Include="constraint\Or.h" />
+    <ClInclude Include="constraint\OutBound.h" />
+    <ClInclude Include="constraint\StringContains.h" />
+    <ClInclude Include="constraint\StringEndsWith.h" />
+    <ClInclude Include="constraint\StringStartsWith.h" />
+    <ClInclude Include="constraint\TriggeredConstraint.h" />
+    <ClInclude Include="constraint\TriggeredOutbound.h" />
+    <ClInclude Include="constraint\TypelessConstraint.h" />
+    <ClInclude Include="CountParameters.h" />
+    <ClInclude Include="Expectation.h" />
+    <ClInclude Include="ExpectationBoundary.h" />
+    <ClInclude Include="ExpectationConglomeration.h" />
+    <ClInclude Include="ExpectationCounter.h" />
+    <ClInclude Include="ExpectationList.h" />
+    <ClInclude Include="ExpectationMap.h" />
+    <ClInclude Include="ExpectationSegment.h" />
+    <ClInclude Include="ExpectationSet.h" />
+    <ClInclude Include="ExpectationValue.h" />
+    <ClInclude Include="framework\CxxTestRunner.h" />
+    <ClInclude Include="framework\CxxTestSupport.h" />
+    <ClInclude Include="framework\SelectUnittestFramework.h" />
+    <ClInclude Include="framework\VerifyingTestCaller.h" />
+    <ClInclude Include="framework\VerifyingTestCase.h" />
+    <ClInclude Include="matcher\AnyArgumentsMatcher.h" />
+    <ClInclude Include="matcher\ArgumentsMatcher.h" />
+    <ClInclude Include="matcher\InvocationMatcher.h" />
+    <ClInclude Include="matcher\InvokeAtLeastMatcher.h" />
+    <ClInclude Include="matcher\InvokeAtLeastOnceMatcher.h" />
+    <ClInclude Include="matcher\InvokeAtMostMatcher.h" />
+    <ClInclude Include="matcher\InvokeCountMatcher.h" />
+    <ClInclude Include="matcher\InvokedAfterMatcher.h" />
+    <ClInclude Include="matcher\InvokedBeforeMatcher.h" />
+    <ClInclude Include="matcher\InvokedRecorder.h" />
+    <ClInclude Include="matcher\InvokeOnceMatcher.h" />
+    <ClInclude Include="matcher\MatcherHolder.h" />
+    <ClInclude Include="matcher\NoArgumentsMatcher.h" />
+    <ClInclude Include="matcher\StatelessInvocationMatcher.h" />
+    <ClInclude Include="matcher\TestFailureMatcher.h" />
+    <ClInclude Include="matcher\TypelessMatcher.h" />
+    <ClInclude Include="matcher\UnlimitedMatcher.h" />
+    <ClInclude Include="MixedMockObject.h" />
+    <ClInclude Include="MockObject.h" />
+    <ClInclude Include="mockpp.h" />
+    <ClInclude Include="mockpp_config-bcb5.h" />
+    <ClInclude Include="mockpp_config-msvc_71.h" />
+    <ClInclude Include="mockpp_dbc.h" />
+    <ClInclude Include="MockTimeServer.h" />
+    <ClInclude Include="production\mockpp_production.h" />
+    <ClInclude Include="production\TimeServer.h" />
+    <ClInclude Include="ReturnObjectList.h" />
+    <ClInclude Include="SelfDescribing.h" />
+    <ClInclude Include="stub\CallStub.h" />
+    <ClInclude Include="stub\CustomStub.h" />
+    <ClInclude Include="stub\DefaultResultStub.h" />
+    <ClInclude Include="stub\RandomStub.h" />
+    <ClInclude Include="stub\ReturnAndCallStub.h" />
+    <ClInclude Include="stub\ReturnAndTriggerStub.h" />
+    <ClInclude Include="stub\ReturnObjectListStub.h" />
+    <ClInclude Include="stub\ReturnStub.h" />
+    <ClInclude Include="stub\Stub.h" />
+    <ClInclude Include="stub\StubHolder.h" />
+    <ClInclude Include="stub\StubSequence.h" />
+    <ClInclude Include="stub\TestFailureStub.h" />
+    <ClInclude Include="stub\ThrowStub.h" />
+    <ClInclude Include="stub\TriggerStub.h" />
+    <ClInclude Include="stub\TypelessStub.h" />
+    <ClInclude Include="stub\TypelessStubSequence.h" />
+    <ClInclude Include="stub\VoidStub.h" />
+    <ClInclude Include="Throwable.h" />
+    <ClInclude Include="ThrowableList.h" />
+    <ClInclude Include="TrackingCounter.h" />
+    <ClInclude Include="util\AssertMo.h" />
+    <ClInclude Include="util\AutoPointer.h" />
+    <ClInclude Include="util\NotImplementedException.h" />
+    <ClInclude Include="Verifiable.h" />
+    <ClInclude Include="VerifiableList.h" />
+    <ClInclude Include="visiting\CountedVisitableMethod.h" />
+    <ClInclude Include="visiting\ResponseVector1.h" />
+    <ClInclude Include="visiting\ResponseVector2.h" />
+    <ClInclude Include="visiting\ResponseVector3.h" />
+    <ClInclude Include="visiting\ResponseVector4.h" />
+    <ClInclude Include="visiting\ResponseVector5.h" />
+    <ClInclude Include="visiting\ResponseVector6.h" />
+    <ClInclude Include="visiting\VisitableMockMethod.h" />
+    <ClInclude Include="visiting\VisitableMockMethod0.h" />
+    <ClInclude Include="visiting\VisitableMockMethod1.h" />
+    <ClInclude Include="visiting\VisitableMockMethod2.h" />
+    <ClInclude Include="visiting\VisitableMockMethod3.h" />
+    <ClInclude Include="visiting\VisitableMockMethod4.h" />
+    <ClInclude Include="visiting\VisitableMockMethod5.h" />
+    <ClInclude Include="visiting\VisitableMockMethod6.h" />
+    <ClInclude Include="visiting\VisitableMockObject.h" />
+    <ClInclude Include="visiting\VisitableMockObject_macro.h" />
+    <ClInclude Include="visiting\VisitableMockObject_template.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="builder\BuilderNamespace.cpp" />
+    <ClCompile Include="builder\IdentityBuilder.cpp" />
+    <ClCompile Include="chaining\ChainableMockObject.cpp" />
+    <ClCompile Include="chaining\ChainingMockObjectSupport.cpp" />
+    <ClCompile Include="chaining\Invocation.cpp" />
+    <ClCompile Include="compat\Asserter.cpp" />
+    <ClCompile Include="compat\AssertionFailedError.cpp" />
+    <ClCompile Include="compat\Exception.cpp" />
+    <ClCompile Include="compat\Formatter.cpp" />
+    <ClCompile Include="constraint\ConstraintSet.cpp" />
+    <ClCompile Include="constraint\IsAnything.cpp" />
+    <ClCompile Include="constraint\IsNothing.cpp" />
+    <ClCompile Include="constraint\TypelessConstraint.cpp" />
+    <ClCompile Include="ExpectationCounter.cpp" />
+    <ClCompile Include="framework\VerifyingTestCaller.cpp" />
+    <ClCompile Include="framework\VerifyingTestCase.cpp" />
+    <ClCompile Include="matcher\InvokeAtLeastMatcher.cpp" />
+    <ClCompile Include="matcher\InvokeAtLeastOnceMatcher.cpp" />
+    <ClCompile Include="matcher\InvokeAtMostMatcher.cpp" />
+    <ClCompile Include="matcher\InvokeCountMatcher.cpp" />
+    <ClCompile Include="matcher\InvokedRecorder.cpp" />
+    <ClCompile Include="matcher\InvokeOnceMatcher.cpp" />
+    <ClCompile Include="matcher\TestFailureMatcher.cpp" />
+    <ClCompile Include="matcher\TypelessMatcher.cpp" />
+    <ClCompile Include="matcher\UnlimitedMatcher.cpp" />
+    <ClCompile Include="MixedMockObject.cpp" />
+    <ClCompile Include="MockObject.cpp" />
+    <ClCompile Include="mockpp.cpp" />
+    <ClCompile Include="MockTimeServer.cpp" />
+    <ClCompile Include="production\TimeServer.cpp" />
+    <ClCompile Include="SelfDescribing.cpp" />
+    <ClCompile Include="stub\VoidStub.cpp" />
+    <ClCompile Include="Throwable.cpp" />
+    <ClCompile Include="ThrowableList.cpp" />
+    <ClCompile Include="TrackingCounter.cpp" />
+    <ClCompile Include="util\AssertMo.cpp" />
+    <ClCompile Include="util\NotImplementedException.cpp" />
+    <ClCompile Include="Verifiable.cpp" />
+    <ClCompile Include="VerifiableList.cpp" />
+    <ClCompile Include="visiting\VisitableMockMethod.cpp" />
+    <ClCompile Include="visiting\VisitableMockObject.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

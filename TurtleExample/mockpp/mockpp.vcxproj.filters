@@ -1,0 +1,628 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="src\builder">
+      <UniqueIdentifier>{cc858c30-065f-4315-a5fe-f2f3f317e3da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\chaining">
+      <UniqueIdentifier>{43a7f949-d361-407e-b8b0-151f8c182ac5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\compat">
+      <UniqueIdentifier>{052f4320-8743-4ee1-b912-7c656b9c5a02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\constraint">
+      <UniqueIdentifier>{3a0b7138-9c32-4d53-9bf8-3382957892e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\framework">
+      <UniqueIdentifier>{d6dcda85-adb9-4325-af98-e57c73d0db66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\matcher">
+      <UniqueIdentifier>{57feaf6f-1c6f-448d-809d-15ed1bd7aae5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\stub">
+      <UniqueIdentifier>{6dd4b772-ca19-41a0-9959-66c324345fd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\util">
+      <UniqueIdentifier>{2e4f1bbe-813e-408c-8729-216ced3285fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\visiting">
+      <UniqueIdentifier>{3aacc3bb-57e4-48b0-a99b-cf0f09b38754}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\production">
+      <UniqueIdentifier>{5fb2f963-de26-40fe-b677-45b28ee935e7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AbstractExpectation.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractExpectationCollection.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="CountParameters.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="Expectation.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpectationBoundary.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpectationConglomeration.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpectationCounter.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpectationList.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpectationMap.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpectationSegment.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpectationSet.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpectationValue.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="MixedMockObject.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="MockObject.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="mockpp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="mockpp_config-bcb5.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="mockpp_config-msvc_71.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="mockpp_dbc.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="MockTimeServer.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="ReturnObjectList.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="SelfDescribing.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="Throwable.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="ThrowableList.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="TrackingCounter.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="Verifiable.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="VerifiableList.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="builder\ArgumentsMatchBuilder.h">
+      <Filter>src\builder</Filter>
+    </ClInclude>
+    <ClInclude Include="builder\ArgumentsMatchBuilderN.h">
+      <Filter>src\builder</Filter>
+    </ClInclude>
+    <ClInclude Include="builder\BuilderNamespace.h">
+      <Filter>src\builder</Filter>
+    </ClInclude>
+    <ClInclude Include="builder\IdentityBuilder.h">
+      <Filter>src\builder</Filter>
+    </ClInclude>
+    <ClInclude Include="builder\InvocationMockerBuilder.h">
+      <Filter>src\builder</Filter>
+    </ClInclude>
+    <ClInclude Include="builder\MatchBuilder.h">
+      <Filter>src\builder</Filter>
+    </ClInclude>
+    <ClInclude Include="builder\StubBuilder.h">
+      <Filter>src\builder</Filter>
+    </ClInclude>
+    <ClInclude Include="chaining\AbstractDynamicChainingMock.h">
+      <Filter>src\chaining</Filter>
+    </ClInclude>
+    <ClInclude Include="chaining\AbstractInvocationDispatcher.h">
+      <Filter>src\chaining</Filter>
+    </ClInclude>
+    <ClInclude Include="chaining\ChainableMockMethod.h">
+      <Filter>src\chaining</Filter>
+    </ClInclude>
+    <ClInclude Include="chaining\ChainableMockMethod0.h">
+      <Filter>src\chaining</Filter>
+    </ClInclude>
+    <ClInclude Include="chaining\ChainableMockMethod1.h">
+      <Filter>src\chaining</Filter>
+    </ClInclude>
+    <ClInclude Include="chaining\ChainableMockMethod2.h">
+      <Filter>src\chaining</Filter>
+    </ClInclude>
+    <ClInclude Include="chaining\ChainableMockMethod3.h">
+      <Filter>src\chaining</Filter>
+    </ClInclude>
+    <ClInclude Include="chaining\ChainableMockMethod4.h">
+      <Filter>src\chaining</Filter>
+    </ClInclude>
+    <ClInclude Include="chaining\ChainableMockMethod5.h">
+      <Filter>src\chaining</Filter>
+    </ClInclude>
+    <ClInclude Include="chaining\ChainableMockMethod6.h">
+      <Filter>src\chaining</Filter>
+    </ClInclude>
+    <ClInclude Include="chaining\ChainableMockObject.h">
+      <Filter>src\chaining</Filter>
+    </ClInclude>
+    <ClInclude Include="chaining\ChainableMockObject_macro.h">
+      <Filter>src\chaining</Filter>
+    </ClInclude>
+    <ClInclude Include="chaining\ChainingMockBuilder.h">
+      <Filter>src\chaining</Filter>
+    </ClInclude>
+    <ClInclude Include="chaining\ChainingMockObjectSupport.h">
+      <Filter>src\chaining</Filter>
+    </ClInclude>
+    <ClInclude Include="chaining\CoreMock.h">
+      <Filter>src\chaining</Filter>
+    </ClInclude>
+    <ClInclude Include="chaining\CountedChainableMethod.h">
+      <Filter>src\chaining</Filter>
+    </ClInclude>
+    <ClInclude Include="chaining\DynamicChainingMock.h">
+      <Filter>src\chaining</Filter>
+    </ClInclude>
+    <ClInclude Include="chaining\DynamicChainingMockError.h">
+      <Filter>src\chaining</Filter>
+    </ClInclude>
+    <ClInclude Include="chaining\FIFOInvocationDispatcher.h">
+      <Filter>src\chaining</Filter>
+    </ClInclude>
+    <ClInclude Include="chaining\Invocation.h">
+      <Filter>src\chaining</Filter>
+    </ClInclude>
+    <ClInclude Include="chaining\InvocationDispatcher.h">
+      <Filter>src\chaining</Filter>
+    </ClInclude>
+    <ClInclude Include="chaining\InvocationMocker.h">
+      <Filter>src\chaining</Filter>
+    </ClInclude>
+    <ClInclude Include="chaining\InvocationN.h">
+      <Filter>src\chaining</Filter>
+    </ClInclude>
+    <ClInclude Include="chaining\Invokable.h">
+      <Filter>src\chaining</Filter>
+    </ClInclude>
+    <ClInclude Include="chaining\LIFOInvocationDispatcher.h">
+      <Filter>src\chaining</Filter>
+    </ClInclude>
+    <ClInclude Include="chaining\mockpp_pti.h">
+      <Filter>src\chaining</Filter>
+    </ClInclude>
+    <ClInclude Include="chaining\OnConsecutiveCalls.h">
+      <Filter>src\chaining</Filter>
+    </ClInclude>
+    <ClInclude Include="chaining\ReturnValueAndCall.h">
+      <Filter>src\chaining</Filter>
+    </ClInclude>
+    <ClInclude Include="chaining\ReturnValueAndTrigger.h">
+      <Filter>src\chaining</Filter>
+    </ClInclude>
+    <ClInclude Include="chaining\StubMatchersCollection.h">
+      <Filter>src\chaining</Filter>
+    </ClInclude>
+    <ClInclude Include="compat\Asserter.h">
+      <Filter>src\compat</Filter>
+    </ClInclude>
+    <ClInclude Include="compat\AssertionFailedError.h">
+      <Filter>src\compat</Filter>
+    </ClInclude>
+    <ClInclude Include="compat\Exception.h">
+      <Filter>src\compat</Filter>
+    </ClInclude>
+    <ClInclude Include="compat\Formatter.h">
+      <Filter>src\compat</Filter>
+    </ClInclude>
+    <ClInclude Include="constraint\And.h">
+      <Filter>src\constraint</Filter>
+    </ClInclude>
+    <ClInclude Include="constraint\Constraint.h">
+      <Filter>src\constraint</Filter>
+    </ClInclude>
+    <ClInclude Include="constraint\ConstraintHolder.h">
+      <Filter>src\constraint</Filter>
+    </ClInclude>
+    <ClInclude Include="constraint\ConstraintList.h">
+      <Filter>src\constraint</Filter>
+    </ClInclude>
+    <ClInclude Include="constraint\ConstraintSet.h">
+      <Filter>src\constraint</Filter>
+    </ClInclude>
+    <ClInclude Include="constraint\ConstraintSetN.h">
+      <Filter>src\constraint</Filter>
+    </ClInclude>
+    <ClInclude Include="constraint\IsAnything.h">
+      <Filter>src\constraint</Filter>
+    </ClInclude>
+    <ClInclude Include="constraint\IsCloseTo.h">
+      <Filter>src\constraint</Filter>
+    </ClInclude>
+    <ClInclude Include="constraint\IsEqual.h">
+      <Filter>src\constraint</Filter>
+    </ClInclude>
+    <ClInclude Include="constraint\IsGreaterOrEqual.h">
+      <Filter>src\constraint</Filter>
+    </ClInclude>
+    <ClInclude Include="constraint\IsGreaterThan.h">
+      <Filter>src\constraint</Filter>
+    </ClInclude>
+    <ClInclude Include="constraint\IsInstanceOf.h">
+      <Filter>src\constraint</Filter>
+    </ClInclude>
+    <ClInclude Include="constraint\IsLessOrEqual.h">
+      <Filter>src\constraint</Filter>
+    </ClInclude>
+    <ClInclude Include="constraint\IsLessThan.h">
+      <Filter>src\constraint</Filter>
+    </ClInclude>
+    <ClInclude Include="constraint\IsNot.h">
+      <Filter>src\constraint</Filter>
+    </ClInclude>
+    <ClInclude Include="constraint\IsNothing.h">
+      <Filter>src\constraint</Filter>
+    </ClInclude>
+    <ClInclude Include="constraint\IsSame.h">
+      <Filter>src\constraint</Filter>
+    </ClInclude>
+    <ClInclude Include="constraint\Or.h">
+      <Filter>src\constraint</Filter>
+    </ClInclude>
+    <ClInclude Include="constraint\OutBound.h">
+      <Filter>src\constraint</Filter>
+    </ClInclude>
+    <ClInclude Include="constraint\StringContains.h">
+      <Filter>src\constraint</Filter>
+    </ClInclude>
+    <ClInclude Include="constraint\StringEndsWith.h">
+      <Filter>src\constraint</Filter>
+    </ClInclude>
+    <ClInclude Include="constraint\StringStartsWith.h">
+      <Filter>src\constraint</Filter>
+    </ClInclude>
+    <ClInclude Include="constraint\TriggeredConstraint.h">
+      <Filter>src\constraint</Filter>
+    </ClInclude>
+    <ClInclude Include="constraint\TriggeredOutbound.h">
+      <Filter>src\constraint</Filter>
+    </ClInclude>
+    <ClInclude Include="constraint\TypelessConstraint.h">
+      <Filter>src\constraint</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\CxxTestRunner.h">
+      <Filter>src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\CxxTestSupport.h">
+      <Filter>src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\SelectUnittestFramework.h">
+      <Filter>src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\VerifyingTestCaller.h">
+      <Filter>src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\VerifyingTestCase.h">
+      <Filter>src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="matcher\AnyArgumentsMatcher.h">
+      <Filter>src\matcher</Filter>
+    </ClInclude>
+    <ClInclude Include="matcher\ArgumentsMatcher.h">
+      <Filter>src\matcher</Filter>
+    </ClInclude>
+    <ClInclude Include="matcher\InvocationMatcher.h">
+      <Filter>src\matcher</Filter>
+    </ClInclude>
+    <ClInclude Include="matcher\InvokeAtLeastMatcher.h">
+      <Filter>src\matcher</Filter>
+    </ClInclude>
+    <ClInclude Include="matcher\InvokeAtLeastOnceMatcher.h">
+      <Filter>src\matcher</Filter>
+    </ClInclude>
+    <ClInclude Include="matcher\InvokeAtMostMatcher.h">
+      <Filter>src\matcher</Filter>
+    </ClInclude>
+    <ClInclude Include="matcher\InvokeCountMatcher.h">
+      <Filter>src\matcher</Filter>
+    </ClInclude>
+    <ClInclude Include="matcher\InvokedAfterMatcher.h">
+      <Filter>src\matcher</Filter>
+    </ClInclude>
+    <ClInclude Include="matcher\InvokedBeforeMatcher.h">
+      <Filter>src\matcher</Filter>
+    </ClInclude>
+    <ClInclude Include="matcher\InvokedRecorder.h">
+      <Filter>src\matcher</Filter>
+    </ClInclude>
+    <ClInclude Include="matcher\InvokeOnceMatcher.h">
+      <Filter>src\matcher</Filter>
+    </ClInclude>
+    <ClInclude Include="matcher\MatcherHolder.h">
+      <Filter>src\matcher</Filter>
+    </ClInclude>
+    <ClInclude Include="matcher\NoArgumentsMatcher.h">
+      <Filter>src\matcher</Filter>
+    </ClInclude>
+    <ClInclude Include="matcher\StatelessInvocationMatcher.h">
+      <Filter>src\matcher</Filter>
+    </ClInclude>
+    <ClInclude Include="matcher\TestFailureMatcher.h">
+      <Filter>src\matcher</Filter>
+    </ClInclude>
+    <ClInclude Include="matcher\TypelessMatcher.h">
+      <Filter>src\matcher</Filter>
+    </ClInclude>
+    <ClInclude Include="matcher\UnlimitedMatcher.h">
+      <Filter>src\matcher</Filter>
+    </ClInclude>
+    <ClInclude Include="stub\CallStub.h">
+      <Filter>src\stub</Filter>
+    </ClInclude>
+    <ClInclude Include="stub\CustomStub.h">
+      <Filter>src\stub</Filter>
+    </ClInclude>
+    <ClInclude Include="stub\DefaultResultStub.h">
+      <Filter>src\stub</Filter>
+    </ClInclude>
+    <ClInclude Include="stub\RandomStub.h">
+      <Filter>src\stub</Filter>
+    </ClInclude>
+    <ClInclude Include="stub\ReturnAndCallStub.h">
+      <Filter>src\stub</Filter>
+    </ClInclude>
+    <ClInclude Include="stub\ReturnAndTriggerStub.h">
+      <Filter>src\stub</Filter>
+    </ClInclude>
+    <ClInclude Include="stub\ReturnObjectListStub.h">
+      <Filter>src\stub</Filter>
+    </ClInclude>
+    <ClInclude Include="stub\ReturnStub.h">
+      <Filter>src\stub</Filter>
+    </ClInclude>
+    <ClInclude Include="stub\Stub.h">
+      <Filter>src\stub</Filter>
+    </ClInclude>
+    <ClInclude Include="stub\StubHolder.h">
+      <Filter>src\stub</Filter>
+    </ClInclude>
+    <ClInclude Include="stub\StubSequence.h">
+      <Filter>src\stub</Filter>
+    </ClInclude>
+    <ClInclude Include="stub\TestFailureStub.h">
+      <Filter>src\stub</Filter>
+    </ClInclude>
+    <ClInclude Include="stub\ThrowStub.h">
+      <Filter>src\stub</Filter>
+    </ClInclude>
+    <ClInclude Include="stub\TriggerStub.h">
+      <Filter>src\stub</Filter>
+    </ClInclude>
+    <ClInclude Include="stub\TypelessStub.h">
+      <Filter>src\stub</Filter>
+    </ClInclude>
+    <ClInclude Include="stub\TypelessStubSequence.h">
+      <Filter>src\stub</Filter>
+    </ClInclude>
+    <ClInclude Include="stub\VoidStub.h">
+      <Filter>src\stub</Filter>
+    </ClInclude>
+    <ClInclude Include="util\AssertMo.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\AutoPointer.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\NotImplementedException.h">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="visiting\CountedVisitableMethod.h">
+      <Filter>src\visiting</Filter>
+    </ClInclude>
+    <ClInclude Include="visiting\ResponseVector1.h">
+      <Filter>src\visiting</Filter>
+    </ClInclude>
+    <ClInclude Include="visiting\ResponseVector2.h">
+      <Filter>src\visiting</Filter>
+    </ClInclude>
+    <ClInclude Include="visiting\ResponseVector3.h">
+      <Filter>src\visiting</Filter>
+    </ClInclude>
+    <ClInclude Include="visiting\ResponseVector4.h">
+      <Filter>src\visiting</Filter>
+    </ClInclude>
+    <ClInclude Include="visiting\ResponseVector5.h">
+      <Filter>src\visiting</Filter>
+    </ClInclude>
+    <ClInclude Include="visiting\ResponseVector6.h">
+      <Filter>src\visiting</Filter>
+    </ClInclude>
+    <ClInclude Include="visiting\VisitableMockMethod.h">
+      <Filter>src\visiting</Filter>
+    </ClInclude>
+    <ClInclude Include="visiting\VisitableMockMethod0.h">
+      <Filter>src\visiting</Filter>
+    </ClInclude>
+    <ClInclude Include="visiting\VisitableMockMethod1.h">
+      <Filter>src\visiting</Filter>
+    </ClInclude>
+    <ClInclude Include="visiting\VisitableMockMethod2.h">
+      <Filter>src\visiting</Filter>
+    </ClInclude>
+    <ClInclude Include="visiting\VisitableMockMethod3.h">
+      <Filter>src\visiting</Filter>
+    </ClInclude>
+    <ClInclude Include="visiting\VisitableMockMethod4.h">
+      <Filter>src\visiting</Filter>
+    </ClInclude>
+    <ClInclude Include="visiting\VisitableMockMethod5.h">
+      <Filter>src\visiting</Filter>
+    </ClInclude>
+    <ClInclude Include="visiting\VisitableMockMethod6.h">
+      <Filter>src\visiting</Filter>
+    </ClInclude>
+    <ClInclude Include="visiting\VisitableMockObject.h">
+      <Filter>src\visiting</Filter>
+    </ClInclude>
+    <ClInclude Include="visiting\VisitableMockObject_macro.h">
+      <Filter>src\visiting</Filter>
+    </ClInclude>
+    <ClInclude Include="visiting\VisitableMockObject_template.h">
+      <Filter>src\visiting</Filter>
+    </ClInclude>
+    <ClInclude Include="production\mockpp_production.h">
+      <Filter>src\production</Filter>
+    </ClInclude>
+    <ClInclude Include="production\TimeServer.h">
+      <Filter>src\production</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ExpectationCounter.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="MixedMockObject.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="MockObject.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="mockpp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="MockTimeServer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SelfDescribing.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Throwable.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="ThrowableList.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="TrackingCounter.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Verifiable.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="VerifiableList.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="builder\BuilderNamespace.cpp">
+      <Filter>src\builder</Filter>
+    </ClCompile>
+    <ClCompile Include="builder\IdentityBuilder.cpp">
+      <Filter>src\builder</Filter>
+    </ClCompile>
+    <ClCompile Include="chaining\ChainableMockObject.cpp">
+      <Filter>src\chaining</Filter>
+    </ClCompile>
+    <ClCompile Include="chaining\ChainingMockObjectSupport.cpp">
+      <Filter>src\chaining</Filter>
+    </ClCompile>
+    <ClCompile Include="chaining\Invocation.cpp">
+      <Filter>src\chaining</Filter>
+    </ClCompile>
+    <ClCompile Include="compat\Asserter.cpp">
+      <Filter>src\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="compat\AssertionFailedError.cpp">
+      <Filter>src\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="compat\Exception.cpp">
+      <Filter>src\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="compat\Formatter.cpp">
+      <Filter>src\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="constraint\ConstraintSet.cpp">
+      <Filter>src\constraint</Filter>
+    </ClCompile>
+    <ClCompile Include="constraint\IsAnything.cpp">
+      <Filter>src\constraint</Filter>
+    </ClCompile>
+    <ClCompile Include="constraint\IsNothing.cpp">
+      <Filter>src\constraint</Filter>
+    </ClCompile>
+    <ClCompile Include="constraint\TypelessConstraint.cpp">
+      <Filter>src\constraint</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\VerifyingTestCaller.cpp">
+      <Filter>src\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\VerifyingTestCase.cpp">
+      <Filter>src\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="matcher\InvokeAtLeastMatcher.cpp">
+      <Filter>src\matcher</Filter>
+    </ClCompile>
+    <ClCompile Include="matcher\InvokeAtLeastOnceMatcher.cpp">
+      <Filter>src\matcher</Filter>
+    </ClCompile>
+    <ClCompile Include="matcher\InvokeAtMostMatcher.cpp">
+      <Filter>src\matcher</Filter>
+    </ClCompile>
+    <ClCompile Include="matcher\InvokeCountMatcher.cpp">
+      <Filter>src\matcher</Filter>
+    </ClCompile>
+    <ClCompile Include="matcher\InvokedRecorder.cpp">
+      <Filter>src\matcher</Filter>
+    </ClCompile>
+    <ClCompile Include="matcher\InvokeOnceMatcher.cpp">
+      <Filter>src\matcher</Filter>
+    </ClCompile>
+    <ClCompile Include="matcher\TestFailureMatcher.cpp">
+      <Filter>src\matcher</Filter>
+    </ClCompile>
+    <ClCompile Include="matcher\TypelessMatcher.cpp">
+      <Filter>src\matcher</Filter>
+    </ClCompile>
+    <ClCompile Include="matcher\UnlimitedMatcher.cpp">
+      <Filter>src\matcher</Filter>
+    </ClCompile>
+    <ClCompile Include="stub\VoidStub.cpp">
+      <Filter>src\stub</Filter>
+    </ClCompile>
+    <ClCompile Include="util\AssertMo.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\NotImplementedException.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="visiting\VisitableMockMethod.cpp">
+      <Filter>src\visiting</Filter>
+    </ClCompile>
+    <ClCompile Include="visiting\VisitableMockObject.cpp">
+      <Filter>src\visiting</Filter>
+    </ClCompile>
+    <ClCompile Include="production\TimeServer.cpp">
+      <Filter>src\production</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
