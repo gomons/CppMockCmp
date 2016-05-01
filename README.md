@@ -10,5 +10,5 @@
 
 Исходный код немного модифицирован с целью использования в одном проекте. На данный момент все провекты можно использовать в Visual Studio 2015. 
 
-Обзор средств мокирования можно посмотреть в [WIKI](https://github.com/gomons/CppMockCmp/wiki). Дополнительные материалы можно найти на [gdrive](https://drive.google.com/folderview?id=0B_pE3VcmHPHRc2N4OWVWcE5NNnc&usp=sharing).
+Обзор средств мокирования можно посмотреть в [WIKI](https://github.com/gomons/CppMockCmp/wiki). Дополнительные материалы можно найти на [gdrive](https://drive.google.com/folderview?id=0B_pE3VcmHPHRc2N4OWVWcE5NNnc&usp=sharing). Прогресс выполнения других описаний можно найти на [Trello](https://trello.com/b/bmVGMtGx/corehard-cppmack).
 
